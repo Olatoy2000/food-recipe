@@ -11,7 +11,7 @@ A react (`Next.js` + `React Query`) app, where you can find meals recipe and sav
 - Axios
 - React-hot-toast
 
-**live preview: [https://meal-khuj.netlify.app](https://meal-khuj.netlify.app)**<br>
+**live preview: [olatoy-foodrecipe.netlify.app](olatoy-foodrecipe.netlify.app)**<br>
 **API used: [themealdb](https://www.themealdb.com/api.php)**
 
 
