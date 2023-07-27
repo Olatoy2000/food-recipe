@@ -1,10 +1,10 @@
 import {
-  Html, Head, Main, NextScript,
+  Html, Main, Head, NextScript,
 } from 'next/document';
 
 function MyDocument() {
   return (
-    <Html lang="eng">
+    <Html lang="en">
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=Mirza:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet" />
       </Head>
@@ -13,6 +13,8 @@ function MyDocument() {
         <NextScript />
       </body>
     </Html>
+
   );
 }
+
 export default MyDocument;

@@ -3,6 +3,5 @@ export default function Home() {
     <div>
       <h1>Good morning</h1>
     </div>
-
   );
 }
