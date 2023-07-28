@@ -1,6 +1,9 @@
-function Text() {
+import clsx from 'clsx';
+import classes from './Text.module.scss';
+
+function Text({ children, className }) {
   return (
-    <div />
+    <p className={clsx(classes.text, className)}>{children}</p>
   );
 }
 
