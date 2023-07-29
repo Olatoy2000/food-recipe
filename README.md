@@ -1,4 +1,4 @@
-![olatoy-meal](./images/banner.png)
+![olatoy-meal](./images/new-banner.png)
 
 ## Olatoy-meal
 

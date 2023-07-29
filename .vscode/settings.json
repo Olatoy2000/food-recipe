@@ -24,5 +24,6 @@
 	"prettier.tabWidth": 2,
 	"prettier.arrowParens": "avoid",
 	"prettier.singleQuote": true,
-	"cSpell.words": ["khuj"]
+	"cSpell.words": ["khuj"],
+	"files.eol": "\n"
 }

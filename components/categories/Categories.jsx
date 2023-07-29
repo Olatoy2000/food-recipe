@@ -1,32 +1,33 @@
 import BeatLoader from 'react-spinners/BeatLoader';
 import classes from './Categories.module.scss';
+import CategoryItem from '../CategoryItem';
 
 function Categories({
   categories,
   categoriesIsLoading,
   categoriesIsError,
-  categoryError,
+  selectedCategory,
+  setSelectedCategory,
+
 }) {
+  if (categoriesIsError) {
+    return ('error');
+  }
   if (categoriesIsLoading) {
     return (
-      <BeatLoader color="#fff" />
-    );
-  }
-
-  if (categoriesIsError) {
-    return (
-      <div>
-        Error:
-        {' '}
-        {categoryError.message}
-      </div>
+      <BeatLoader loading={categoriesIsLoading} color="#fff" />
     );
   }
 
   return (
     <div className={classes.categories__container}>
-      {categories.map((item) => (
-        <p key={item.idCategory}>{item.strCategory}</p>
+      {categories && categories.map((item) => (
+        <CategoryItem
+          key={item.idCategory}
+          category={item}
+          selectedCategory={selectedCategory}
+          onClickHandler={() => setSelectedCategory(item.strCategory)}
+        />
       ))}
     </div>
   );
